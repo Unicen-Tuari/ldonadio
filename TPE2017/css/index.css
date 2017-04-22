@@ -1,0 +1,10 @@
+.btn-default{
+  width: 150px;
+  color: blue;
+}
+table, tr, td {
+  border: 1px solid black;
+}
+thead{
+  color: yellow;
+}
