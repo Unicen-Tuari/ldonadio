@@ -7,4 +7,23 @@ table, tr, td {
 }
 thead{
   color: yellow;
+  background-color: grey;
+}
+.violeta{
+  color: violet;
+}
+.azul{
+  color:blue;
+}
+.cyan{
+  color: cyan;
+}
+.rojo{
+  color: red;
+}
+.ama{
+  color: yellow;
+}
+.verde{
+  color: green;
 }

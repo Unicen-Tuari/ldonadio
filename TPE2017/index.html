@@ -54,20 +54,9 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">Ayuda</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
                 <li><a href="#contact">Contacto</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
+                <li><a href="access.html">Salir</a></li>
               </ul>
             </div>
           </div>
@@ -85,7 +74,6 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li><!--ESTE ITEM DE LA LISTA LO AGREGUE YO AUN NO TIENE MAS PROGRAMADO-->
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -101,13 +89,23 @@
                       </p>
                     </td>
                     <td>
-                      <p>Estado</p>
+                      <p>
+                        Estado
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        Eventos
+                      </p>
                     </td>
                   </thead>
                 </tr>
                 <tr>
                   <td>
                     <button class="btn btn-default" onclick="encender_apagar()">Luz</button>
+                  </td>
+                  <td>
+                    <p></p>
                   </td>
                   <td>
                     <p></p>
@@ -120,10 +118,16 @@
                   <td>
                     <p></p>
                   </td>
+                  <td>
+                    <p></p>
+                  </td>
                 </tr>
                 <tr>
                   <td>
                     <button class="btn btn-default" onclick="encender_apagar3()">Climatizador</button>
+                  </td>
+                  <td>
+                    <p></p>
                   </td>
                   <td>
                     <p></p>
@@ -236,39 +240,7 @@
 
 <!--FOOTER-->
     <footer>
-            <table>
-              <tr>
-                <thead>
-                  <td>
-                    <p>
-                      Control
-                    </p>
-                  </td>
-                  <td>
-                    <p>Estado</p>
-                  </td>
-                </thead>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="encender_apagar()">Luz</button>
-                </td>
-                <td>
-
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="encender_apagar2()">Toma_corriente</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onclick="encender_apagar3()">Climatizador</button>
-                </td>
-              </tr>
-            </table>
-          <p> Control by Instalaciones Inteligentes Donadio</p>
+        <p><span class="violeta">&copy;Control by Instalaciones Inteligentes</span><span class="cyan">D</span><span class="rojo">o</span><span class="ama">n</span><span class="cyan">a</span><span class="verde">d</span><span class="rojo">i</span><span class="ama">o</span> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
 
     </div><!-- /.container -->
