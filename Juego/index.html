@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-<title>A Jugar se ha dicho</title>
+  <meta charset="utf-8">
+  <title>A Jugar se ha dicho</title>
 </head>
+
 <body>
 <!--REQUISITOS-->
 <!--1- usando un campo de texto (donde ingresa piedra, papel o tijera textualmente).-->
 <!--2- Elige una vez papel, a la siguiente tijera y a la siguiente piedra (y así sucesivamente)-->
 <!--2- Cada 3 partidas ganadas por el humano muestra un “alert” felicitándolo.
 -->
-<div>
-<form>
-  Ingrese su opción de juego: <input type="text" opcion="opcion" value=""/>
-
-</form>
+<div class="container">
+  <h1>Juguemos a piedra, papel o tijera!</h1>
+  <form>
+    Ingrese su opción de juego: <input type="text" name="opcion" id="opcion" value=""/>
+  </form>
+  <button onclick="jugar();">Jugar</button>
 <!div>
 
-
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
