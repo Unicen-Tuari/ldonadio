@@ -11,42 +11,50 @@ function jugar() {
   let opcion = document.getElementById("opcion").value;
   let opciones_pc = ["piedra","papel","tijera"];
   let opcion_pc = opciones_pc[indice];
+  let resultado;
 
   if (opcion_pc === opcion){
     console.log("Entro por igual");
-    return 0;<!--empate-->
+    resultado = 0;<!--empate-->
   }
   else{
     console.log("Entro por distinto");
     switch (opcion) {
-      case opcion:"piedra"
+      case "piedra":
         if (opcion_pc === "tijera"){
-          return 1;<!--Gano usuario-->
+          resultado = 1;<!--Gano usuario-->
         }
-        else if (false) {
-          return 3;<!--Perdio usuario-->
+        else{
+          resultado = 2;<!--Perdio usuario-->
         }
         break;
-      case opcion:"tijera"
+      case "tijera":
         if (opcion_pc === "papel"){
-          return 1;<!--Gano usuario-->
+          resultado = 1;<!--Gano usuario-->
         }
-        else if (false) {
-          return 3;<!--Perdio usuario-->
+        else{
+          resultado = 2;<!--Perdio usuario-->
         }
         break;
-      case opcion:"papel"
+      case "papel":
         if (opcion_pc === "piedra"){
-          return 1;<!--Gano usuario-->
+          resultado = 1;<!--Gano usuario-->
         }
-        else if(false){
-          return 3;<!--Perdio usuario-->
+        else{
+          resultado = 2;<!--Perdio usuario-->
         }
+        break;
         default:
-          alter("La palabra ingresada no es correcta");
+          alert("La palabra ingresada no es correcta");
 
     }
-
+ }
+ switch (resultado) {
+   case 0: alert("Empate declarado");
+          break;
+   case 1: alert("Gano usted, hay revancha?");
+          break;
+   case 2: alert("Usted ha sido derrotado");
   }
   indice = indice +1;
   if (indice===3){
