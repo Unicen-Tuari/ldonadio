@@ -2,7 +2,7 @@
 <html lang="en">
 <!--ENCABEZADO-->
   <head>
-    <meta charset="utf-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -68,7 +68,7 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -93,44 +93,30 @@
                         Estado
                       </p>
                     </td>
-                    <td>
-                      <p>
-                        Eventos
-                      </p>
-                    </td>
                   </thead>
                 </tr>
                 <tr>
                   <td>
-                    <button class="btn btn-default" onclick="encender_apagar()">Luz</button>
+                    <button class="btn btn-default" onclick="encender_apagar()">Luz Exterior</button>
                   </td>
                   <td>
                     <p><img src="images/luz.jpg" alt="Luz encendida"></p>
                   </td>
+                </tr>
+                <tr>
                   <td>
-                    <p><img src="images/mov.png" alt="Luz encendida"></p>
+                    <button class="btn btn-default" onclick="encender_apagar2()">Riego Jardin</button>
+                  </td>
+                  <td>
+                    <p><img src="images/riego.jpg" alt="Luz encendida"></p></p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <button class="btn btn-default" onclick="encender_apagar2()">Tomas de corriente</button>
+                    <button class="btn btn-default" onclick="encender_apagar3()">Cortinas</button>
                   </td>
                   <td>
-                    <p><img src="images/tomas.jpg" alt="Luz encendida"></p></p>
-                  </td>
-                  <td>
-                    <p><img src="images/ruido.jpg" alt="Ruidos en sector"></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <button class="btn btn-default" onclick="encender_apagar3()">Climatizador</button>
-                  </td>
-                  <td>
-                    <p><img src="images/clima.jpg" alt="Luz encendida"></p></p>
-                  </td>
-                  <td>
-                    <p><img src="images/temp.jpg" alt="temperatura encendida"></p>
+                    <p><img src="images/persiana.jpg" alt="Persiana"></p></p>
                   </td>
                 </tr>
               </table>
@@ -154,11 +140,6 @@
                         Estado
                       </p>
                     </td>
-                    <td>
-                      <p>
-                        Eventos
-                      </p>
-                    </td>
                   </thead>
                 </tr>
                 <tr>
@@ -168,32 +149,23 @@
                   <td>
                     <p><img src="images/luz.jpg" alt="Luz encendida"></p>
                   </td>
-                  <td>
-                    <p><img src="images/mov.png" alt="Luz encendida"></p>
-                  </td>
                 </tr>
                 <tr>
                   <td>
                     <button class="btn btn-default" onclick="encender_apagar2()">Tomas de corriente</button>
                   </td>
                   <td>
-                    <p><img src="images/tomas.jpg" alt="Luz encendida"></p></p>
-                  </td>
-                  <td>
-                    <p><img src="images/ruido.jpg" alt="Ruidos en sector"></p>
+                    <p><img src="images/tomas.jpg" alt="Tomas de corriente"></p></p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <button class="btn btn-default" onclick="encender_apagar3()">Climatizador</button>
+                    <button class="btn btn-default" onclick="encender_apagar3()">Ventilacion</button>
                   </td>
                   <td>
-                    <p><img src="images/clima.jpg" alt="Luz encendida"></p></p>
+                    <p><img src="images/ventilacion.jpg" alt="Ventilacion"></p></p>
                   </td>
-                  <td>
-                    <p><img src="images/temp.jpg" alt="temperatura encendida"></p>
-                  </td>
-                </tr>
+              </tr>
               </table>
             </div>
           </div>
@@ -215,11 +187,6 @@
                         Estado
                       </p>
                     </td>
-                    <td>
-                      <p>
-                        Eventos
-                      </p>
-                    </td>
                   </thead>
                 </tr>
                 <tr>
@@ -229,19 +196,13 @@
                   <td>
                     <p><img src="images/luz.jpg" alt="Luz encendida"></p>
                   </td>
-                  <td>
-                    <p><img src="images/mov.png" alt="Luz encendida"></p>
-                  </td>
                 </tr>
                 <tr>
                   <td>
-                    <button class="btn btn-default" onclick="encender_apagar2()">Tomas de corriente</button>
+                    <button class="btn btn-default" onclick="encender_apagar2()">Audio/Video</button>
                   </td>
                   <td>
-                    <p><img src="images/tomas.jpg" alt="Luz encendida"></p></p>
-                  </td>
-                  <td>
-                    <p><img src="images/ruido.jpg" alt="Ruidos en sector"></p>
+                    <p><img src="images/audio.jpg" alt="Audio"></p></p>
                   </td>
                 </tr>
                 <tr>
@@ -250,9 +211,6 @@
                   </td>
                   <td>
                     <p><img src="images/clima.jpg" alt="Luz encendida"></p></p>
-                  </td>
-                  <td>
-                    <p><img src="images/temp.jpg" alt="temperatura encendida"></p>
                   </td>
                 </tr>
               </table>
@@ -270,10 +228,11 @@
       </a>
     </div><!-- /.carousel -->
 
-<!--FOOTER-->
+<!--FOOTER
     <footer>
-        <p><span class="violeta">&copy;Control by Instalaciones Inteligentes</span><span class="cyan">D</span><span class="rojo">o</span><span class="ama">n</span><span class="cyan">a</span><span class="verde">d</span><span class="rojo">i</span><span class="ama">o</span> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+     <p><span class="violeta">&copy;Control by Instalaciones Inteligentes</span><span class="cyan">D</span><span class="rojo">o</span><span class="ama">n</span><span class="cyan">a</span><span class="verde">d</span><span class="rojo">i</span><span class="ama">o</span> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+
+    </footer>-->
 
     </div><!-- /.container -->
 

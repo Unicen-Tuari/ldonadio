@@ -27,3 +27,14 @@ thead{
 .verde{
   color: green;
 }
+body, html {
+  height: 100%;
+  padding: 0; /* ¿por qué, carousel, por qué? */
+}
+.carousel {
+  height: 100%;
+  margin-bottom: 0; /* ¿por qué, carousel, por qué? */
+}
+.carousel-inner, .carousel-inner > .item, .carousel-inner > .item > img {
+  height: 100%;
+}

@@ -1,4 +1,4 @@
-<!--Mi primer codigo en javascript-->
+//Mi primer codigo en javascript
 "use strict"
 
 alert("Donadio esta programando cuidado!");
@@ -55,9 +55,13 @@ function jugar() {
    case 1: alert("Gano usted, hay revancha?");
           break;
    case 2: alert("Usted ha sido derrotado");
+          break;
   }
   indice = indice +1;
   if (indice===3){
     indice = 0;
   }
 }
+
+let boton = document.getElementById("jugar");
+boton.addEventListener('click',function(){jugar();});
