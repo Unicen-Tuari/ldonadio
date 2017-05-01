@@ -3,7 +3,7 @@
 
 alert("Donadio esta programando cuidado!");
 
-
+let ganado = 0;
 let indice = 0;
 
 function jugar() {
@@ -51,11 +51,18 @@ function jugar() {
  }
  switch (resultado) {
    case 0: alert("Empate declarado");
+          ganado= 0;
           break;
    case 1: alert("Gano usted, hay revancha?");
+          ganado= ganado +1;
           break;
    case 2: alert("Usted ha sido derrotado");
+          ganado= 0;
           break;
+  }
+  if (ganado===3){
+    alert("Felicitaciones me gano tres veces seguidas!!! soy su hijo.")
+    ganado= 0;
   }
   indice = indice +1;
   if (indice===3){
