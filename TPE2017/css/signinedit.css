@@ -4,20 +4,23 @@
 }
 
 .violeta{
-  color: violet;
+  color: #4E0277;
 }
 .azul{
   color:blue;
 }
 .cyan{
-  color: cyan;
+  color: #157CFF;
 }
 .rojo{
   color: red;
 }
 .ama{
-  color: yellow;
+  color: #FF9E00;
 }
 .verde{
-  color: green;
+  color: #056D00;
+}
+footer{
+  float: right;
 }
