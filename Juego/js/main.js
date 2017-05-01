@@ -6,12 +6,19 @@ alert("Donadio esta programando cuidado!");
 let ganado = 0;
 let indice = 0;
 
+
+
+
 function jugar() {
   //let opcion = document.getElementsByName("opcion").value;
   let opcion = document.getElementById("opcion").value;
   let opciones_pc = ["piedra","papel","tijera"];
   let opcion_pc = opciones_pc[indice];
   let resultado;
+  let img_usuario = document.getElementById("op_usuario");
+
+  let img_pc = document.getElementById("opcion_pc");
+
 
   if (opcion_pc === opcion){
     console.log("Entro por igual");
@@ -49,19 +56,26 @@ function jugar() {
 
     }
  }
+
  switch (resultado) {
    case 0: alert("Empate declarado");
           ganado= 0;
+          img_usuario.src = "images/"+opcion+".jpg";
+          img_pc.src = "images/"+opcion_pc+".jpg";
           break;
    case 1: alert("Gano usted, hay revancha?");
           ganado= ganado +1;
+          img_usuario.src = "images/"+opcion+".jpg";
+          img_pc.src = "images/"+opcion_pc+".jpg";
           break;
    case 2: alert("Usted ha sido derrotado");
           ganado= 0;
+          img_usuario.src = "images/"+opcion+".jpg";
+          img_pc.src = "images/"+opcion_pc+".jpg";
           break;
   }
   if (ganado===3){
-    alert("Felicitaciones me gano tres veces seguidas!!! soy su hijo.")
+    alert("Felicitaciones me gano tres veces seguidas!!!")
     ganado= 0;
   }
   indice = indice +1;
